@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/home.css">
+  <title>Mes dépenses</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="date">
+        <p></p>
+      </div>
+      <div class="user">
+        <!-- <i class="fa-solid fa-user" style="color: #ffffff;"></i> -->
+        <p>Ahmed el mir</p>
+      </div>
+    </div>
+    <div class="budget">
+      <p>Votre Budget</p>
+      <p>350.00 DH</p>
+    </div>
+    <div class="depenses">
+      <div class="menu">
+        <p>Dépenses</p>
+        <select name="mois" id="mois"></select>
+        <p id="dialog-open">+</p>
+      </div>
+      <div class="mes-depenses">
+        <!-- depense card template -->
+        <template id="depense-card-template">
+          <div class="depense-card">
+            <div class="desc-date">
+              <p>Carburant</p>
+              <p>06 avril 2025</p>
+            </div>
+            <div class="prix">
+              <p>60 DH</p>
+            </div>
+            <div class="delete">
+              X
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+    <dialog>
+      <div class="dep-header">
+        <p>Nouvelle Dépense</p>
+        <p id="dialog-close">X</p>
+      </div>
+      <label for="description">Description :</label>
+      <input type="text" id="description" placeholder="Description de dépense...">
+      <label for="montant">Montant :</label>
+      <input type="number" id="montant" placeholder="Montant de la dépense...">
+      <button type="button" id="btn-ajouter">Ajouter</button>
+    </dialog>
+  </div>
+  <script src="../js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+:root {
+  --primary-color : rgb(48, 127, 129);
+  --background : #F1FFFB;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+}
