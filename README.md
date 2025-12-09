@@ -43,7 +43,7 @@ You only need a modern web browser (Chrome, Firefox, Edge, etc.).
 
 #### **Installation**
 
-1.  Bash : git clone https://github.com/MyPocket/MyPocket.git
+1.  Bash : git clone https://github.com/ELMIR-Ahmed/MyPocket.git
 2.  cd MyPocket
     
 3.  **Open the application:**
